@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>蕾姆介绍页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('./remu.jpg') fixed center/cover no-repeat;
+
+
+        }
+
+        ::-webkit-scrollbar {
+
+            width: 7px;
+            height: 7px;
+            background-color: rgba(255, 250, 230, .8);
+
+        }
+
+        ::-webkit-scrollbar-button {
+            opacity: .3;
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(145, 190, 240, 0.753);
+            border-radius: 22px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: skyblue;
+        }
+
+        #main {
+            display: flex;
+            flex: 100%;
+            flex-wrap: wrap;
+            position: relative;
+            width: 98vw;
+            height: 100vh;
+
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .half {
+            flex: 25%;
+            position: relative;
+
+        }
+
+        .left {
+            height: 75vh;
+        }
+
+        .right {
+            color: white;
+            margin-top: 10em;
+
+
+        }
+
+        .one {
+            text-shadow: 1px 0 0 #91bef0, 0 1px 0 #91bef0,
+                0 -1px 0 #91bef0, -1px 0 0 #91bef0,
+                1px 0 1px #91bef0, 0 1px 1px #91bef0,
+                0 -1px 1px #91bef0, -1px 0 1px #91bef0;
+        }
+
+        .one::before {
+            background: #91bef0;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: .3;
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .top-right {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+
+        .name {
+            padding: 18px;
+            color: white;
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        .name::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #91bef0;
+            opacity: .3;
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .title {
+
+
+            border-left: 8px solid #91bef0;
+            padding-left: 1.5em;
+            padding-top: 10px;
+        }
+
+        .title:nth-child(1) {
+            transform: translateY(40%);
+        }
+
+        .right .info {
+            padding: 20px;
+            display: block;
+            line-height: 2;
+        }
+
+        footer {
+            position: relative;
+            margin-top: 2em;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 700px) {
+            .half {
+                flex: 100%;
+            }
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="half left"></div>
+        <div class="top-right name one">雷姆</div>
+        <div class="half right">
+            <div class="one" style="position:relative;">
+                <section id="about">
+                    <h1 class="title">关于</h1>
+                    <div class="info">
+                        <p>雷姆是一位有着水蓝色头发、水蓝色瞳孔的少女，有着与双胞胎姐姐拉姆相似的外型，右眼以刘海掩盖，只露出左眼，与姐姐拉姆相反；</p>
+                        <p>截至2017年2月，雷姆是《Re:从零开始的异世界生活》中人气最高的女性角色，且在2016年多个评选中评价位居前三，有些评选认为雷姆是年度最佳女角色。也在哔哩哔哩弹幕网举办的2016动画角色人气大赏决赛以高票荣获2016年的第一名。《Re:从零开始的异世界生活》官方举办的双胞胎姊妹生日特别活动也因大部分都以雷姆为主而造成争议，并引发网友讨论。
+                        </p>
+                    </div>
+                </section>
+
+                <section id="sentence">
+                    <h1 class="title">
+                        语录
+                    </h1>
+                    <div class="info">
+                        <p>雷姆知道，昴是哪怕身处无边的黑暗中，也会伸出手的勇敢之人。雷姆喜欢昴摸我的头，仿佛能通过手掌与头发的接触与昴心意相通；雷姆喜欢昴的声音，每听到你的话，就仿佛心被温暖了；雷姆喜欢昴的眼神，虽然平时很锐利，但雷姆喜欢那温柔待人时，柔软下来的目光；雷姆喜欢昴的手指，明明是男孩子却有着修长的手指，但握住之后又能感受到男子汉气息的有力而纤细的手指；雷姆喜欢昴的行走方式，结伴行走的时候，偶然会像确认雷姆有没有跟上一般回头，雷姆喜欢这样的行走方式；雷姆喜欢昴的睡颜，像婴儿一样毫无防备，睫毛有点长长的，摸摸脸颊就会平静下来，恶作剧地碰碰嘴唇，也不会察觉到。让雷姆感到心里满满的，喜欢你。
+                        </p>
+                        <p>昴如果要讨厌自己的话，雷姆忽然也想让昴知道，你有着这么多的优点呢。</p>
+                        <p>因为，昴是雷姆的英雄。在那昏暗的森林里，在那迷失了自我的世界里，拯救了横冲直撞的雷姆的人是你，对于刚醒来动弹不得的雷姆，对于魔法使用过度而疲惫不堪的姐姐，不逃避并且担当诱饵正面迎战魔兽的人是你。即便没有胜算，即便真的会有生命危险，即使如此你还是活了下来，还是那么温暖地回到了雷姆的怀抱中，醒来，微笑着，把雷姆最需要的话，在最想听的时候，由最渴望的人说出来。
+                        </p>
+                        <p>停止的时间，冰冻的心，被昴甜蜜地融化，温柔地打动。</p>
+                        <p>雷姆爱你。雷姆爱的就是昴，如果不是昴，雷姆不要。</p>
+                        <p>那么就从现在，从这里开始吧。就好像昴推动了雷姆停止的时间一般，雷姆要推动昴停止的时间。从这里开始吧，从一，不...从零开始。</p>
+
+                    </div>
+                </section>
+                <section id="aboutme">
+                    <h1 class="title">关于本站</h1>
+                    <div class="info">
+                        <p>
+                            她是 <a href="https://shizuri.net/" target="_blank">@yiny</a> 的最爱！因此设立此站，表示对她的爱！蕾姆赛高！yiny
+                            是一个正在学习前后端的同学，他喜欢看动漫热爱编程！想要了解他，就来参观他的 <a href="https://github.com/Innei/"
+                                target="_blank">GitHub</a> 吧！
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="one">
+                <p>© 2019 Remu. All Rights Reserved.</p>
+
+                <p>Made By <a href="https://shizuri.net/" target="_blank">yiny.</a> Hosted By GitHub Pages.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = () => {
+        const right = document.querySelector('.right');
+        
+    }
+</script>
+
+</html>
